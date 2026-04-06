@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Elite Estates — Premium Real Estate</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Main stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+  <!-- ============================================
+       NAVIGATION BAR
+       ============================================ -->
+  <nav id="navbar">
+    <a class="nav-logo" href="#home">Elite Estates</a>
+
+    <!-- Desktop links -->
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#properties">Properties</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#trust">Why Us</a></li>
+      <li><a href="#testimonials">Clients</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    <!-- Hamburger (mobile only) -->
+    <div class="hamburger" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </nav>
+
+
+  <!-- ============================================
+       MOBILE FULLSCREEN MENU OVERLAY
+       ============================================ -->
+  <div class="mobile-menu" id="mobileMenu">
+    <button class="mobile-close" onclick="toggleMenu()">&#x2715;</button>
+    <a href="#home"         onclick="toggleMenu()">Home</a>
+    <a href="#properties"   onclick="toggleMenu()">Properties</a>
+    <a href="#services"     onclick="toggleMenu()">Services</a>
+    <a href="#trust"        onclick="toggleMenu()">Why Us</a>
+    <a href="#testimonials" onclick="toggleMenu()">Clients</a>
+    <a href="#contact"      onclick="toggleMenu()">Contact</a>
+  </div>
+
+
+  <!-- ============================================
+       HERO SECTION
+       ============================================ -->
+  <section id="home">
+    <!-- Background image — swap the src to use a local file if preferred -->
+    <div class="hero-bg" id="heroBg"></div>
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+      <span class="hero-eyebrow">Premium Real Estate &middot; Since 2008</span>
+      <h1 class="hero-title">
+        Find Your<br>
+        <em>Perfect Property</em>
+      </h1>
+      <p class="hero-desc">
+        We curate exceptional homes and commercial spaces across India's most coveted
+        addresses &mdash; guided by expertise, driven by trust.
+      </p>
+      <a href="#properties" class="btn-primary">
+        <span>Explore Properties</span>
+      </a>
+    </div>
+
+    <!-- Animated scroll indicator -->
+    <div class="hero-scroll">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+
+  <!-- ============================================
+       PROPERTIES SECTION
+       ============================================ -->
+  <section id="properties">
+    <div class="section-header">
+      <span class="section-label">Our Listings</span>
+      <h2 class="section-title">Curated <em>Properties</em></h2>
+      <div class="divider"></div>
+      <p class="section-sub">
+        Each property is hand-selected for its unique character, prime location, and exceptional value.
+      </p>
+    </div>
+
+    <div class="properties-grid">
+
+      <!-- Card 1 -->
+      <div class="prop-card">
+        <div class="prop-img-wrap">
+          <img
+            src="images/prop-1-apartment-mumbai.jpg"
+            alt="Luxury City Apartment"
+            loading="lazy"
+          >
+          <span class="prop-badge">Apartment</span>
+        </div>
+        <div class="prop-body">
+          <div class="prop-location">&#128205; Mumbai</div>
+          <div class="prop-name">Luxury City Apartment</div>
+          <p class="prop-desc">Premium apartment with skyline view and modern interiors</p>
+          <div class="prop-footer">
+            <span class="prop-price">&#8377;1.2 Cr</span>
+            <a href="#contact" class="prop-btn">Enquire</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="prop-card">
+        <div class="prop-img-wrap">
+          <img
+            src="images/prop-2-villa-hyderabad.jpg"
+            alt="Modern Family Villa"
+            loading="lazy"
+          >
+          <span class="prop-badge">Villa</span>
+        </div>
+        <div class="prop-body">
+          <div class="prop-location">&#128205; Hyderabad</div>
+          <div class="prop-name">Modern Family Villa</div>
+          <p class="prop-desc">Spacious villa with garden and private parking</p>
+          <div class="prop-footer">
+            <span class="prop-price">&#8377;2.5 Cr</span>
+            <a href="#contact" class="prop-btn">Enquire</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="prop-card">
+        <div class="prop-img-wrap">
+          <img
+            src="images/prop-3-commercial-bangalore.jpg"
+            alt="Downtown Business Space"
+            loading="lazy"
+          >
+          <span class="prop-badge">Commercial</span>
+        </div>
+        <div class="prop-body">
+          <div class="prop-location">&#128205; Bangalore</div>
+          <div class="prop-name">Downtown Business Space</div>
+          <p class="prop-desc">Ideal commercial space in prime business district</p>
+          <div class="prop-footer">
+            <span class="prop-price">&#8377;3 Cr</span>
+            <a href="#contact" class="prop-btn">Enquire</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="prop-card">
+        <div class="prop-img-wrap">
+          <img
+            src="images/prop-4-residence-pune.jpg"
+            alt="Green Valley Residence"
+            loading="lazy"
+          >
+          <span class="prop-badge">Residence</span>
+        </div>
+        <div class="prop-body">
+          <div class="prop-location">&#128205; Pune</div>
+          <div class="prop-name">Green Valley Residence</div>
+          <p class="prop-desc">Peaceful living surrounded by greenery</p>
+          <div class="prop-footer">
+            <span class="prop-price">&#8377;95 Lakh</span>
+            <a href="#contact" class="prop-btn">Enquire</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 5 -->
+      <div class="prop-card">
+        <div class="prop-img-wrap">
+          <img
+            src="images/prop-5-condo-goa.jpg"
+            alt="Beachside Luxury Condo"
+            loading="lazy"
+          >
+          <span class="prop-badge">Condo</span>
+        </div>
+        <div class="prop-body">
+          <div class="prop-location">&#128205; Goa</div>
+          <div class="prop-name">Beachside Luxury Condo</div>
+          <p class="prop-desc">Sea-facing condo with premium amenities</p>
+          <div class="prop-footer">
+            <span class="prop-price">&#8377;1.8 Cr</span>
+            <a href="#contact" class="prop-btn">Enquire</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 6 -->
+      <div class="prop-card">
+        <div class="prop-img-wrap">
+          <img
+            src="images/prop-6-studio-delhi.jpg"
+            alt="Urban Studio Apartment"
+            loading="lazy"
+          >
+          <span class="prop-badge">Studio</span>
+        </div>
+        <div class="prop-body">
+          <div class="prop-location">&#128205; Delhi</div>
+          <div class="prop-name">Urban Studio Apartment</div>
+          <p class="prop-desc">Compact and stylish studio for city living</p>
+          <div class="prop-footer">
+            <span class="prop-price">&#8377;70 Lakh</span>
+            <a href="#contact" class="prop-btn">Enquire</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 7 -->
+      <div class="prop-card">
+        <div class="prop-img-wrap">
+          <img
+            src="images/prop-7-house-chennai.jpg"
+            alt="Suburban Dream House"
+            loading="lazy"
+          >
+          <span class="prop-badge">House</span>
+        </div>
+        <div class="prop-body">
+          <div class="prop-location">&#128205; Chennai</div>
+          <div class="prop-name">Suburban Dream House</div>
+          <p class="prop-desc">Perfect family home in a quiet neighborhood</p>
+          <div class="prop-footer">
+            <span class="prop-price">&#8377;1.4 Cr</span>
+            <a href="#contact" class="prop-btn">Enquire</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 8 -->
+      <div class="prop-card">
+        <div class="prop-img-wrap">
+          <img
+            src="images/prop-8-eco-kochi.jpg"
+            alt="Eco Smart Home"
+            loading="lazy"
+          >
+          <span class="prop-badge">Eco Home</span>
+        </div>
+        <div class="prop-body">
+          <div class="prop-location">&#128205; Kochi</div>
+          <div class="prop-name">Eco Smart Home</div>
+          <p class="prop-desc">Sustainable living with smart home features</p>
+          <div class="prop-footer">
+            <span class="prop-price">&#8377;1.1 Cr</span>
+            <a href="#contact" class="prop-btn">Enquire</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ============================================
+       SERVICES SECTION
+       ============================================ -->
+  <section id="services">
+    <div class="section-header">
+      <span class="section-label">What We Offer</span>
+      <h2 class="section-title">Our <em>Services</em></h2>
+      <div class="divider"></div>
+      <p class="section-sub">End-to-end real estate support tailored to every client's unique journey.</p>
+    </div>
+
+    <div class="services-grid">
+
+      <div class="service-card">
+        <span class="service-num">01</span>
+        <div class="service-icon">&#127968;</div>
+        <div class="service-title">Buying Assistance</div>
+        <p class="service-desc">
+          From property search to final registration, we guide you through every step
+          with expert counsel and market intelligence.
+        </p>
+      </div>
+
+      <div class="service-card">
+        <span class="service-num">02</span>
+        <div class="service-icon">&#128203;</div>
+        <div class="service-title">Selling Support</div>
+        <p class="service-desc">
+          Strategic pricing, professional staging, and targeted marketing to maximize
+          your property's value in any market condition.
+        </p>
+      </div>
+
+      <div class="service-card">
+        <span class="service-num">03</span>
+        <div class="service-icon">&#128273;</div>
+        <div class="service-title">Property Management</div>
+        <p class="service-desc">
+          Comprehensive management &mdash; tenant sourcing, maintenance, and financial
+          reporting &mdash; handled with precision and care.
+        </p>
+      </div>
+
+      <div class="service-card">
+        <span class="service-num">04</span>
+        <div class="service-icon">&#128200;</div>
+        <div class="service-title">Investment Consulting</div>
+        <p class="service-desc">
+          Data-driven insights and market analysis to help you build a real estate
+          portfolio that grows with your ambitions.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ============================================
+       TRUST / WHY US SECTION
+       ============================================ -->
+  <section id="trust">
+    <div class="section-header">
+      <span class="section-label">Our Foundations</span>
+      <h2 class="section-title">Why <em>Trust Us</em></h2>
+      <div class="divider"></div>
+      <p class="section-sub">
+        Built on a decade of transparent dealings and exceptional client outcomes across India.
+      </p>
+    </div>
+
+    <div class="trust-grid">
+
+      <div class="trust-card">
+        <div class="trust-icon">&#129695;</div>
+        <div class="trust-title">Transparent Process</div>
+        <p class="trust-desc">
+          No hidden fees, no fine print surprises. Every step of the transaction is
+          communicated clearly and honestly.
+        </p>
+      </div>
+
+      <div class="trust-card">
+        <div class="trust-icon">&#128202;</div>
+        <div class="trust-title">Market Expertise</div>
+        <p class="trust-desc">
+          15+ years of hyperlocal market intelligence spanning 12 major Indian cities
+          and their premium micro-markets.
+        </p>
+      </div>
+
+      <div class="trust-card">
+        <div class="trust-icon">&#129309;</div>
+        <div class="trust-title">Client Focused</div>
+        <p class="trust-desc">
+          Your goals drive every recommendation. We measure our success solely by the
+          satisfaction of the people we serve.
+        </p>
+      </div>
+
+      <div class="trust-card">
+        <div class="trust-icon">&#128737;</div>
+        <div class="trust-title">Reliable Support</div>
+        <p class="trust-desc">
+          A dedicated advisor is available post-purchase for one full year &mdash;
+          because our relationship doesn't end at the deed.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ============================================
+       TESTIMONIALS SECTION
+       ============================================ -->
+  <section id="testimonials">
+    <div class="section-header">
+      <span class="section-label">Client Stories</span>
+      <h2 class="section-title">What Our <em>Clients Say</em></h2>
+      <div class="divider"></div>
+      <p class="section-sub">
+        The most meaningful measure of our work is the trust of the families and
+        businesses we've served.
+      </p>
+    </div>
+
+    <div class="testimonials-grid">
+
+      <div class="testi-card">
+        <div class="testi-quote">&ldquo;</div>
+        <p class="testi-text">
+          They made buying our first home an absolute pleasure. Their team's knowledge
+          of the Hyderabad market saved us both time and money. Truly outstanding.
+        </p>
+        <div class="testi-footer">
+          <div class="testi-avatar">AR</div>
+          <div>
+            <div class="testi-name">Arjun Reddy</div>
+            <div class="testi-role">Homeowner &middot; Hyderabad</div>
+            <div class="testi-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testi-card">
+        <div class="testi-quote">&ldquo;</div>
+        <p class="testi-text">
+          We needed a premium office in Bangalore urgently. Within two weeks, they
+          presented four exceptional options. We closed on our dream space in three.
+        </p>
+        <div class="testi-footer">
+          <div class="testi-avatar">PM</div>
+          <div>
+            <div class="testi-name">Priya Mehta</div>
+            <div class="testi-role">CEO &middot; Bangalore</div>
+            <div class="testi-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testi-card">
+        <div class="testi-quote">&ldquo;</div>
+        <p class="testi-text">
+          Their investment consulting team helped us build a diversified portfolio
+          across Mumbai and Pune. Returns have consistently exceeded expectations
+          over four years.
+        </p>
+        <div class="testi-footer">
+          <div class="testi-avatar">SK</div>
+          <div>
+            <div class="testi-name">Suresh Kumar</div>
+            <div class="testi-role">Investor &middot; Mumbai</div>
+            <div class="testi-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testi-card">
+        <div class="testi-quote">&ldquo;</div>
+        <p class="testi-text">
+          We sold our Goa property at 18% above asking price thanks to their expert
+          staging and marketing strategy. Unmatched professionalism throughout.
+        </p>
+        <div class="testi-footer">
+          <div class="testi-avatar">NP</div>
+          <div>
+            <div class="testi-name">Neha Pillai</div>
+            <div class="testi-role">Seller &middot; Goa</div>
+            <div class="testi-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ============================================
+       CONTACT SECTION
+       ============================================ -->
+  <section id="contact">
+    <!-- Parallax background image with dark overlay -->
+    <div class="contact-bg"></div>
+    <div class="contact-bg-overlay"></div>
+
+    <div class="contact-inner">
+      <div class="section-header">
+        <span class="section-label">Get In Touch</span>
+        <h2 class="section-title">Start Your <em>Journey</em></h2>
+        <div class="divider"></div>
+      </div>
+
+      <div class="contact-wrap">
+
+        <!-- Left: contact details -->
+        <div class="contact-info">
+          <p>
+            Whether you're buying your first home, expanding your portfolio, or looking
+            to sell &mdash; our advisors are here to guide every step with expertise and care.
+          </p>
+
+          <div class="contact-item">
+            <div class="contact-ico">&#128231;</div>
+            <div>
+              <div class="contact-item-label">Email</div>
+              <div class="contact-item-value">hello@eliteestates.in</div>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-ico">&#128222;</div>
+            <div>
+              <div class="contact-item-label">Phone</div>
+              <div class="contact-item-value">+91 98765 43210</div>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-ico">&#128205;</div>
+            <div>
+              <div class="contact-item-label">Office</div>
+              <div class="contact-item-value">
+                Level 12, One Hitech Tower<br>
+                Hitech City, Hyderabad 500081
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: enquiry form -->
+        <form class="contact-form" onsubmit="handleSubmit(event)">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="cname">Full Name</label>
+              <input type="text" id="cname" placeholder="Your name" required>
+            </div>
+            <div class="form-group">
+              <label for="cemail">Email Address</label>
+              <input type="email" id="cemail" placeholder="you@example.com" required>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="interest">I'm interested in</label>
+            <input
+              type="text"
+              id="interest"
+              placeholder="e.g. Villa in Hyderabad, Investment advice&hellip;"
+            >
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea
+              id="message"
+              placeholder="Tell us more about what you're looking for&hellip;"
+              required
+            ></textarea>
+          </div>
+
+          <button type="submit" class="btn-submit" id="submitBtn">Send Message</button>
+        </form>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================
+       FOOTER
+       ============================================ -->
+  <footer>
+    <div class="footer-logo">Elite Estates</div>
+    <div class="footer-copy">&copy; 2025 Elite Estates. All rights reserved.</div>
+  </footer>
+
+
+  <!-- Main JavaScript -->
+  <script src="main.js"></script>
+
+</body>
+</html>
